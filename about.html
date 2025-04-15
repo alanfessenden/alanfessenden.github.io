@@ -1,70 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About – Alan Fessenden</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
-      color: #222;
       margin: 0;
       padding: 0;
+      background: #f8f8f8;
+      color: #333;
     }
-    header {
-      background-color: #eeeeee;
-      padding: 20px;
+
+    nav {
+      background-color: #1b1b1b;
+      padding: 1em 0;
+      margin-bottom: 2em;
       text-align: center;
     }
-    main {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    h2 {
-      color: #444;
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 1em;
     }
-    a {
-      color: #0066cc;
+
+    nav ul li a {
+      color: #fdfdfd;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
+
+    nav ul li a:hover {
       text-decoration: underline;
     }
-    section {
-      margin-bottom: 30px;
+
+    .container {
+      padding: 0 1.5em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 0.5em 0;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>About Alan Fessenden</h1>
-</header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="film.html">Film & TV</a></li>
+      <li><a href="https://sweetbunny.store" target="_blank" rel="noopener noreferrer">Sweet Bunny Store</a></li>
+    </ul>
+  </nav>
 
-<main>
-  <section>
-    <p>Alan Fessenden is a writer, director, and performer based in New York. His work blends surrealism, warmth, and humor to explore intimacy, identity, and the stories we tell ourselves.</p>
-  </section>
-
-  <section>
-    <h2>Sweet Bunny Trilogy</h2>
-    <p>Alan is the author of the upcoming trilogy beginning with <strong><em>Sweet Bunny</em></strong>, followed by <em>The Crystal Dragons</em> and a final book told from Adele's perspective. The trilogy is a deconstructed exploration of desire, narrative, and transformation across dreamlike landscapes.</p>
-    <p>Check out the store: <a href="https://sweetbunny.store" target="_blank">sweetbunny.store</a></p>
-  </section>
-
-  <section>
-    <h2>The HelpFULLS: Now and Forever</h2>
-    <p>A comic and surreal play about caregiving and performance, <strong><em>The HelpFULLS: Now and Forever</em></strong> combines theatrical absurdity with emotional realism. Alan is currently preparing treatments of the piece for both stage and screen.</p>
-  </section>
-
-  <section>
-    <h2>They Just Keep Talking (Podcast)</h2>
-    <p>Alan hosts the podcast <em>They Just Keep Talking</em>, where he interviews artists and collaborators about creativity, process, and how we keep going. <a href="podcast.html">Listen to episodes here</a>.</p>
-  </section>
-</main>
-
-</body>
-</html>
+  <div class="container">
+    <h1>About Alan Fessenden</h1>
+    <p>Alan is a performer, writer, and
