@@ -1,14 +1,23 @@
-# Minimal Theme
+# Alan Fessenden – Personal Website
 
-[Demo the Theme](https://orderedlist.com/minimal/)
+This is the source code for my personal website, hosted at [alanfessenden.com](https://alanfessenden.com) via GitHub Pages.
 
-This is the raw HTML and styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/).
+---
 
-Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
+### What’s Here
+- A portfolio of work as a writer, performer, and creative consultant  
+- Info about *Sweet Bunny* and upcoming titles in the trilogy  
+- Links to *The HelpFULLS*, *Left in New York* (pilot), and more  
+- **Sweet Bunny Store** – coming soon
 
-# License
+---
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
+### Site Structure
+- `index.html` – Main landing page  
+- `about.html` – Bio and creative background  
+- More pages to come
 
+---
 
-
+### Contact
+Feel free to explore the site and reach out through the contact links listed there.
