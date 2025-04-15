@@ -1,65 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>They Just Keep Talking – Podcast</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast – Alan Fessenden</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fdfdfd;
-      color: #222;
+      background: #f8f8f8;
+      color: #333;
     }
-    header {
-      background-color: #eeeeee;
-      padding: 20px;
+
+    nav {
+      background-color: #1b1b1b;
+      padding: 1em 0;
+      margin-bottom: 2em;
       text-align: center;
     }
-    main {
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    iframe {
-      margin: 20px 0;
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 1em;
     }
-    .episode {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
-    }
-    a {
-      color: #0066cc;
+
+    nav ul li a {
+      color: #fdfdfd;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
+
+    nav ul li a:hover {
       text-decoration: underline;
+    }
+
+    .container {
+      padding: 0 1.5em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 0.5em 0;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>They Just Keep Talking</h1>
-  <p>A podcast hosted by Alan Fessenden</p>
-</header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="film.html">Film & TV</a></li>
+      <li><a href="https://sweetbunny.store" target="_blank" rel="noopener noreferrer">Sweet Bunny Store</a></li>
+    </ul>
+  </nav>
 
-<main>
-  <!-- Embedded Podbean Player -->
-  <iframe title="They Just Keep Talking" allowtransparency="true" height="315" width="100%"
-          style="border: none; min-width: min(100%, 430px); height: 315px;" scrolling="no"
-          data-name="pb-iframe-player"
-          src="https://www.podbean.com/player-v2/?i=jucfd-1049e9c-pbblog-playlist&share=1&download=1&rtl=0&fonts=Arial&skin=f6f6f6&font-color=auto&logo_link=episode_page&order=episodic&limit=10&filter=all&ss=a713390a017602015775e868a2cf26b0&btn-skin=1b1b1b&size=315"
-          loading="lazy" allowfullscreen>
-  </iframe>
-
-  <p>
-    <strong>They Just Keep Talking</strong> is a podcast about art, work, identity, and the strange ways we find our voice. Through conversations with artists, thinkers, and creative collaborators, Alan Fessenden explores what it means to build a life and a body of work.
-  </p>
-</main>
+  <div class="container">
+    <h1>Podcast: They Just Keep Talking</h1>
+    <p>Listen to the latest episodes of <em>They Just Keep Talking</em>, a podcast about creativity, collaboration, and everything in between.</p>
+    <ul>
+      <li><a href="https://open.spotify.com/show/6P5PlsOJqRrgF6nl3RcZQU" target="_blank">Listen on Spotify</a></li>
+      <!-- You can add more platforms/episodes here if you want -->
+    </ul>
+  </div>
 
 </body>
 </html>
+
