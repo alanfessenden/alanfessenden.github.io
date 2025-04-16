@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About – Alan Fessenden</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Alan Fessenden</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Georgia, serif;
       margin: 0;
       padding: 0;
-      background: #f8f8f8;
+      background-color: #fafafa;
       color: #333;
     }
 
-    nav {
-      background-color: #1b1b1b;
-      padding: 1em 0;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin: 0 1em;
-    }
-
-    nav ul li a {
-      color: #fdfdfd;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
     .container {
-      padding: 0 1.5em;
-      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      max-width: 900px;
       margin: 0 auto;
+      padding: 40px 20px;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .profile-pic {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 30px;
     }
 
-    p {
-      font-size: 1.1rem;
+    .bio-text {
       line-height: 1.6;
     }
 
-    @media (max-width: 600px) {
-      nav ul li {
-        display: block;
-        margin: 0.5em 0;
+    .quote {
+      font-style: italic;
+      background-color: #e8e8e8;
+      padding: 20px;
+      margin-top: 40px;
+      border-left: 5px solid #bbb;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        gap: 40px;
+      }
+      .profile-pic {
+        max-width: 300px;
+        flex-shrink: 0;
+      }
+      .bio {
+        flex: 1;
       }
     }
   </style>
 </head>
 <body>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="podcast.html">Podcast</a></li>
-      <li><a href="film.html">Film & TV</a></li>
-      <li><a href="https://sweetbunny.store" target="_blank" rel="noopener noreferrer">Sweet Bunny Store</a></li>
-    </ul>
-  </nav>
-
   <div class="container">
-    <h1>About Alan Fessenden</h1>
-    <p>Alan is a performer, writer, and
+    <img src="alanfessenden957.jpeg" alt="Alan Fessenden" class="profile-pic">
+    <div class="bio">
+      <div class="bio-text">
+        <p>
+          Alan Fessenden is an artist of many disciplines. Though trained in theatre performance, he emerged as a director and a creative force—often found at the beginnings of things, like founding Jobsite Theater and helping to open the Magnet Theater. He has worked across mediums and styles, often stepping into the void to build something new. His work has been bold, tender, and sometimes shaped by betrayal—but always his own.
+        </p>
+        <p>
+          Alan was directed by Rachel Kavanagh (<em>A Midsummer Night's Dream</em>), Joe Harmston, and Edward Hall (<em>The Winter’s Tale</em>) in the BRIT program at the University of South Florida. He studied clown with Giovanni Fusetti and trained in comedy with Kevin Allison, Kevin McDonald, Ed Herbstman, Abby Sher, Ian Roberts, and others.
+        </p>
+        <p>
+          Today, his art is one of observation and exploration. The characters he writes are seekers—desperate for connection, for illumination, for home. His writing is haunted by memory but pushes forward in pursuit of beauty and belonging. He welcomes the dark as he chases the light.
+        </p>
+        <p>
+          Alan has always written—solo shows like <em>I Think I'm Dumb</em>, <em>What If I'm Dead?</em>, <em>Almost Perfect</em>; Christmas shows like <em>A Very Orphan Christmas</em>; and work with sketch teams. Only recently has he embraced the title of “writer,” stepping into larger projects like the <em>Sweet Bunny</em> trilogy.
+        </p>
+      </div>
+      <div class="quote">
+        <p>
+          “Then I had to pull away. I had to leave the crowd and my successor wanting more. And I just started thumping and making myself small, and I bounced my way to the far edge of the crowd. And started to disappear. But I teased it out so the last thing they saw was my little bunny tail. And then I was gone.”
+        </p>
+        <p style="text-align: right;">— <em>Sweet Bunny</em></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
