@@ -34,5 +34,51 @@
     nav ul li a {
       color: #fdfdfd;
       text-decoration: none;
+      font-weight: bold;
+    }
 
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
 
+    .container {
+      padding: 0 1.5em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 0.5em 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="film.html">Film & TV</a></li>
+      <li><a href="https://sweetbunny.store" target="_blank" rel="noopener noreferrer">Sweet Bunny Store</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to Alan Fessenden's Website</h1>
+    <p>This is the homepage. Explore to learn more about my work in writing, performance, and creative development.</p>
+  </div>
+</body>
+</html>
