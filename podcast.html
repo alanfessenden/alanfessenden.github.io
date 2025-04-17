@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Podcast – Alan Fessenden</title>
+  <title>Podcast – They Just Keep Talking</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Georgia, serif;
       margin: 0;
       padding: 0;
-      background: #f8f8f8;
+      background-color: #fafafa;
       color: #333;
     }
 
     nav {
       background-color: #1b1b1b;
       padding: 1em 0;
-      margin-bottom: 2em;
       text-align: center;
     }
 
@@ -42,28 +41,23 @@
     }
 
     .container {
-      padding: 0 1.5em;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .logo {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 30px;
     }
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 1.5em;
-    }
-
-    ul {
-      padding-left: 1.2em;
-    }
-
-    ul li {
-      margin-bottom: 0.5em;
+    iframe {
+      width: 100%;
+      min-width: min(100%, 430px);
+      height: 315px;
+      border: none;
     }
 
     @media (max-width: 600px) {
@@ -75,33 +69,24 @@
   </style>
 </head>
 <body>
-
- <nav style="background-color: #1b1b1b; padding: 1em 0; margin-bottom: 2em; text-align: center;">
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    <li style="display: inline-block; margin: 0 1em;"><a href="index.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Home</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="about.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">About</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="podcast.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Podcast</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="film.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Film & TV</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="sweetbunny.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Sweet Bunny Store</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="film.html">Film & TV</a></li>
+      <li><a href="sweetbunny.html">Sweet Bunny Store</a></li>
+    </ul>
+  </nav>
 
   <div class="container">
-    <h1>Podcast: They Just Keep Talking</h1>
-    <p>
-      Listen to the latest episodes of <em>They Just Keep Talking</em>, a podcast about creativity, collaboration, and everything in between.
-    </p>
-    <ul>
-      <li>
-        <a href="https://open.spotify.com/show/6P5PlsOJqRrgF6nl3RcZQU" target="_blank" rel="noopener noreferrer">
-          Listen on Spotify
-        </a>
-      </li>
-      <!-- More platforms or episodes can go here -->
-    </ul>
+    <img src="images/TheyJustKeepTalking1.png" alt="They Just Keep Talking Logo" class="logo" />
+    
+    <iframe title="They Just Keep Talking" allowtransparency="true"
+      scrolling="no" data-name="pb-iframe-player"
+      src="https://www.podbean.com/player-v2/?i=jucfd-1049e9c-pbblog-playlist&share=1&download=1&rtl=0&fonts=Arial&skin=f6f6f6&font-color=auto&logo_link=episode_page&order=episodic&limit=10&filter=all&ss=a713390a017602015775e868a2cf26b0&btn-skin=1b1b1b&size=315"
+      loading="lazy" allowfullscreen="">
+    </iframe>
   </div>
-
 </body>
 </html>
-
-
