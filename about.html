@@ -49,14 +49,15 @@
       padding: 40px 20px;
     }
 
-    .profile-pic {
+   .profile-pic {
   width: 100%;
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
-  object-fit: cover;
-  flex-shrink: 0;
+  margin-bottom: 30px;
+  object-fit: contain;
 }
+
 
     .bio-text {
       line-height: 1.6;
@@ -70,19 +71,23 @@
       border-left: 5px solid #bbb;
     }
 
-    @media (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        gap: 40px;
-      }
-      .profile-pic {
-        max-width: 300px;
-        flex-shrink: 0;
-      }
-      .bio {
-        flex: 1;
-      }
-    }
+   @media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    width: 40%;
+    max-width: none;
+  }
+
+  .bio {
+    width: 60%;
+  }
+}
+
   </style>
 </head>
 <body>
