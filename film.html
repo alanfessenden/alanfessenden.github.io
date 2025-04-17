@@ -3,97 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Film & TV – Alan Fessenden</title>
+  <title>Film & TV | Alan Fess</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background: #f8f8f8;
-      color: #333;
+      background: #fff;
+      color: #000;
     }
-
-    nav {
-      background-color: #1b1b1b;
-      padding: 1em 0;
-      margin-bottom: 2em;
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-bar img.logo {
+      height: 48px;
+    }
+    .nav-links a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .film {
+      margin-bottom: 2rem;
       text-align: center;
     }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .film img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
-    nav ul li {
-      display: inline-block;
-      margin: 0 1em;
-    }
-
-    nav ul li a {
-      color: #fdfdfd;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      padding: 0 1.5em;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 1.5em;
-    }
-
-    ul {
-      padding-left: 1.2em;
-    }
-
-    ul li {
-      margin-bottom: 0.5em;
-    }
-
-    @media (max-width: 600px) {
-      nav ul li {
-        display: block;
-        margin: 0.5em 0;
-      }
+    .film-title {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
 
- <nav style="background-color: #1b1b1b; padding: 1em 0; margin-bottom: 2em; text-align: center;">
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    <li style="display: inline-block; margin: 0 1em;"><a href="index.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Home</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="about.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">About</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="podcast.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Podcast</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="film.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Film & TV</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="sweetbunny.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Sweet Bunny Store</a></li>
-  </ul>
-</nav>
+  <header class="nav-bar">
+    <img src="images/alanfess.jpg" alt="Alan Fess Logo" class="logo" />
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="film.html">Film & TV</a>
+      <a href="store.html">Sweet Bunny Store</a>
+    </nav>
+  </header>
 
-  <div class="container">
-    <h1>Film & TV</h1>
-    <p>Explore Alan's work on screen—from sharp comedic roles to emotionally layered characters. He’s appeared in indie films, pilots like <em>Left in New York</em>, and various experimental shorts.</p>
-    <ul>
-      <li><a href="https://www.imdb.com/name/nm3100213/" target="_blank" rel="noopener noreferrer">Alan on IMDb</a></li>
-      <li><a href="https://vimeo.com/alanfessenden" target="_blank" rel="noopener noreferrer">Watch on Vimeo</a></li>
-    </ul>
-  </div>
+  <main class="container">
+    <div class="film">
+      <a href="https://www.youtube.com/watch?v=example1" target="_blank">
+        <img src="https://img.youtube.com/vi/example1/hqdefault.jpg" alt="The Big Bang Thumbnail">
+        <div class="film-title">The Big Bang</div>
+      </a>
+    </div>
+
+    <div class="film">
+      <a href="https://www.youtube.com/watch?v=example2" target="_blank">
+        <img src="https://img.youtube.com/vi/example2/hqdefault.jpg" alt="Andre the Butcher Thumbnail">
+        <div class="film-title">Andre the Butcher</div>
+      </a>
+    </div>
+
+    <div class="film">
+      <a href="https://www.youtube.com/watch?v=example3" target="_blank">
+        <img src="https://img.youtube.com/vi/example3/hqdefault.jpg" alt="Slow Jam King Thumbnail">
+        <div class="film-title">Slow Jam King</div>
+      </a>
+    </div>
+  </main>
 
 </body>
 </html>
