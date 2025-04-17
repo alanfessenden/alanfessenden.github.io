@@ -83,19 +83,59 @@
       }
     }
   </style>
+  .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #000;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    margin-top: 1rem;
+  }
+  .nav-links a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
 </head>
 <body>
 
   <header class="nav-bar">
-    <img src="images/alanfesscardfront.jpg" alt="Alan Fess Logo" class="logo" />
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="podcast.html">Podcast</a>
-      <a href="film.html">Film & TV</a>
-      <a href="sweetbunny.html">Sweet Bunny Store</a>
-    </nav>
-  </header>
+  <div class="logo-text">Alan Fess</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="film.html">Film & TV</a>
+    <a href="sweetbunny.html">Sweet Bunny Store</a>
+  </nav>
+</header>
 
   <div class="container">
     <h2>The Big Bang</h2>
