@@ -2,22 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="google-site-verification=tQnxA0PJKizwKcPT_M2LhIdy5MUfG8YWQaadFlOQMMI" />
-  <title>Index – Alan Fessenden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alan Fessenden</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f8f8f8;
-      color: #333;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #1b1b1b;
+      color: #fdfdfd;
     }
 
     nav {
       background-color: #1b1b1b;
       padding: 1em 0;
-      margin-bottom: 2em;
+      margin-bottom: 0;
       text-align: center;
     }
 
@@ -27,61 +25,95 @@
       margin: 0;
     }
 
-    nav ul li {
+    nav li {
       display: inline-block;
       margin: 0 1em;
     }
 
-    nav ul li a {
+    nav a {
       color: #fdfdfd;
       text-decoration: none;
       font-weight: bold;
     }
 
-    nav ul li a:hover {
-      text-decoration: underline;
+    .hero {
+      background: url('images/AlanFessenden673.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
-    .container {
-      padding: 0 1.5em;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 3em;
+      width: 100%;
+    }
+
+    .overlay h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+
+    .overlay p {
+      font-size: 1.2em;
       max-width: 700px;
-      margin: 0 auto;
+      margin: 0 auto 1em;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .cta-buttons a {
+      display: inline-block;
+      margin: 1em;
+      padding: 0.8em 2em;
+      border: 2px solid #fdfdfd;
+      color: #fdfdfd;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+    .cta-buttons a:hover {
+      background: #fdfdfd;
+      color: #1b1b1b;
     }
 
-    @media (max-width: 600px) {
-      nav ul li {
-        display: block;
-        margin: 0.5em 0;
-      }
+    .content-section {
+      padding: 3em 2em;
+      text-align: center;
     }
   </style>
 </head>
 <body>
- <<nav style="background-color: #1b1b1b; padding: 1em 0; margin-bottom: 2em; text-align: center;">
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    <li style="display: inline-block; margin: 0 1em;"><a href="index.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Home</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="about.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">About</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="podcast.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Podcast</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="film.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Film & TV</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="sweetbunny.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Sweet Bunny Store</a></li>
-    <li style="display: inline-block; margin: 0 1em;"><a href="creative-direction.html" style="color: #fdfdfd; text-decoration: none; font-weight: bold;">Art & Design</a></li>
-  </ul>
-</nav>
 
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="podcast.html">Podcast</a></li>
+      <li><a href="film.html">Film & TV</a></li>
+      <li><a href="sweetbunny.html">Sweet Bunny Store</a></li>
+      <li><a href="creative-direction.html">Creative Direction</a></li>
+    </ul>
+  </nav>
 
-  <div class="container">
-    <h1>Welcome to Alan Fessenden's Website</h1>
-    <p>This is the homepage. Explore to learn more about my work in writing, performance, and creative development.</p>
+  <div class="hero">
+    <div class="overlay">
+      <h1>Alan Fessenden</h1>
+      <p>Writer. Performer. Creative Director. Explorer of the in-between.</p>
+      <div class="cta-buttons">
+        <a href="podcast.html">Listen to the Podcast</a>
+        <a href="sweetbunny.html">Visit the Sweet Bunny Store</a>
+        <a href="creative-direction.html">Explore Creative Direction</a>
+      </div>
+    </div>
   </div>
+
+  <div class="content-section">
+    <h2>Welcome In</h2>
+    <p>Whether I’m writing stories, building strange and beautiful spaces, or stepping into character, my work is about transformation—of space, self, and story. This is where performance meets design, memory meets invention, and the creative path keeps unfolding.</p>
+    <p>Dive into the podcast, browse the books, or connect for creative collaboration.</p>
+  </div>
+
 </body>
 </html>
